@@ -14,19 +14,11 @@ import UIKit
 class SpellDescriptionViewController: UIViewController {
     var descAsString = ""
     var spelldetail = SpellDetail(name: "N/A", desc: [], higher_level: [], page: "N/A", range: "N/A", components: [], material: "N/A", ritual: "N/A", duration: "N/A", concentration: "N/A", casting_time: "N/A", level: 0)
-    //    {
-    //        didSet{
-    //            DispatchQueue.main.async {
-    //                self.spellName.reloadInputViews()
-    //            }
-    //        }
-    //    }
+  
     
     public var passURL: Spells!
-    @IBOutlet weak var spellName: UILabel!
     @IBOutlet weak var range: UILabel!
     @IBOutlet weak var components: UILabel!
-    @IBOutlet weak var materia: UILabel!
     @IBOutlet weak var material: UITextView!
     @IBOutlet weak var ritutal: UILabel!
     @IBOutlet weak var duration: UILabel!
@@ -50,8 +42,7 @@ class SpellDescriptionViewController: UIViewController {
         
         NetworkHelper.performDataTask(urlString: passURL.url, httpMethod: "") { (error, data, response) in
             DispatchQueue.main.async {
-                self.spellName.text = self.spelldetail.name
-                
+                self.title = self.spelldetail.name
                 self.spellDescription.text = self.arrayToString(input: self.spelldetail.desc ?? [""])
                 self.spellDescriptionHigherLevel.text = self.arrayToString(input: self.spelldetail.higher_level ?? [""])
                 self.range.text = "Range: \(self.spelldetail.range ?? "N/A")"

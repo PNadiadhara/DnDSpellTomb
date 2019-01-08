@@ -18,6 +18,9 @@
 		BFA982B221DD3247003B9474 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA982B121DD3247003B9474 /* NetworkHelper.swift */; };
 		BFA982B421DD6283003B9474 /* SpellDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA982B321DD6283003B9474 /* SpellDescriptionViewController.swift */; };
 		BFA982E321DEB61C003B9474 /* spellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA982E221DEB61C003B9474 /* spellTableViewCell.swift */; };
+		BFC5200D21E3BD530061B0BF /* FavoriteSpellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5200C21E3BD530061B0BF /* FavoriteSpellsViewController.swift */; };
+		BFC5200F21E3C72E0061B0BF /* FaveSpellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5200E21E3C72E0061B0BF /* FaveSpellTableViewCell.swift */; };
+		BFC5201121E3C7710061B0BF /* CustomSpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5201021E3C7710061B0BF /* CustomSpellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		BFA982B121DD3247003B9474 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		BFA982B321DD6283003B9474 /* SpellDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDescriptionViewController.swift; sourceTree = "<group>"; };
 		BFA982E221DEB61C003B9474 /* spellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spellTableViewCell.swift; sourceTree = "<group>"; };
+		BFC5200C21E3BD530061B0BF /* FavoriteSpellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSpellsViewController.swift; sourceTree = "<group>"; };
+		BFC5200E21E3C72E0061B0BF /* FaveSpellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveSpellTableViewCell.swift; sourceTree = "<group>"; };
+		BFC5201021E3C7710061B0BF /* CustomSpellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				BFA9829721D2B637003B9474 /* ViewController.swift */,
 				BFA982E221DEB61C003B9474 /* spellTableViewCell.swift */,
 				BFA982B321DD6283003B9474 /* SpellDescriptionViewController.swift */,
+				BFC5201021E3C7710061B0BF /* CustomSpellViewController.swift */,
+				BFC5200C21E3BD530061B0BF /* FavoriteSpellsViewController.swift */,
+				BFC5200E21E3C72E0061B0BF /* FaveSpellTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,11 +195,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA982AC21D2BF13003B9474 /* Spell.swift in Sources */,
+				BFC5200D21E3BD530061B0BF /* FavoriteSpellsViewController.swift in Sources */,
 				BFA982AA21D2BD3A003B9474 /* AppError.swift in Sources */,
+				BFC5201121E3C7710061B0BF /* CustomSpellViewController.swift in Sources */,
 				BFA982A821D2BAEB003B9474 /* SpellAPIClient.swift in Sources */,
 				BFA982B421DD6283003B9474 /* SpellDescriptionViewController.swift in Sources */,
 				BFA9829821D2B637003B9474 /* ViewController.swift in Sources */,
 				BFA982B221DD3247003B9474 /* NetworkHelper.swift in Sources */,
+				BFC5200F21E3C72E0061B0BF /* FaveSpellTableViewCell.swift in Sources */,
 				BFA982E321DEB61C003B9474 /* spellTableViewCell.swift in Sources */,
 				BFA9829621D2B637003B9474 /* AppDelegate.swift in Sources */,
 			);

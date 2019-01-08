@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var spellSearch: UISearchBar!
     @IBOutlet weak var spellListTableView: UITableView!
     override func viewDidLoad() {
+        
         spellListTableView.dataSource = self
         spellSearch.delegate = self
         super.viewDidLoad()
@@ -59,7 +60,7 @@ extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         guard let cell = spellListTableView.dequeueReusableCell(withIdentifier: "spellCell", for: indexPath) as? spellTableViewCell else {return UITableViewCell()}
-        
+        cell.backgroundColor = UIColor.clear
         if searching {
             let spellToSet = searchedSpell[indexPath.row]
             cell.spellName.text = spellToSet.name
@@ -82,6 +83,9 @@ extension ViewController: UITableViewDataSource{
 var searchedSpell = [Spells]()
 
 extension ViewController : UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchedSpell = spells.filter ({$0.name.lowercased().prefix(searchText.count) == searchText.lowercased()})
         searching = true
@@ -90,4 +94,5 @@ extension ViewController : UISearchBarDelegate {
     }
     
 }
+
 

@@ -63,3 +63,34 @@ struct Subclasses: Codable{
     let url: String
     let name: String
 }
+
+struct CustomSpellDetail: Codable{
+    let name: String?
+    let desc: String?
+    let higher_level: String?
+    let page: String?
+    let range: String?
+    let components: String?
+    let material: String?
+    let ritual: String?
+    let duration: String?
+    let concentration: String?
+    let casting_time: String?
+    let level: Int?
+   
+    
+    init(name: String, desc: String, higher_level: String, page: String, range: String, components: String, material: String, ritual: String, duration: String, concentration: String, casting_time: String, level: Int) {
+        self.name = name
+        self.desc = desc
+        self.higher_level = higher_level
+        self.page = page
+        self.range = range
+        self.components = components
+        self.material = material
+        self.ritual = ritual
+        self.duration = duration
+        self.concentration = concentration
+        self.casting_time = casting_time
+        self.level = level
+    }
+}
